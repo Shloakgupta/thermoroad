@@ -485,7 +485,7 @@ const HomePage = () => {
             </div>
             <div className="video-link">
               <p>Watch our innovation video to learn more about Thermoroad</p>
-              <a href="#" className="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=-Yku5xyqsRQ" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Watch Video
               </a>
             </div>
