@@ -2,6 +2,8 @@ import "./App.css";
 import logo from "./logo.png";
 import saharshPhoto from "./saharshmanne.jpeg";
 import tanishPhoto from "./tanishdasari.jpeg";
+import shloakPhoto from "./shloak.jpeg";
+import ashuPhoto from "./ashu.jpeg";
 import { useState } from "react";
 
 const HomePage = () => {
@@ -11,15 +13,18 @@ const HomePage = () => {
     {
       id: "shloak",
       name: "Shloak Gupta",
-      role: "CMO",
+      role: "CMO 📱",
+      fullRole: "Chief Marketing Officer",
       avatar: "SG",
+      photo: shloakPhoto,
       description:
         "As the Chief Marketing Officer, Shloak leads Thermoroad's marketing strategy and brand development. With a passion for sustainable innovation, Shloak works to communicate the environmental and economic benefits of our technology to cities and communities across the country.",
     },
     {
       id: "saharsh",
       name: "Saharsh Manne",
-      role: "CTO",
+      role: "CTO 🔧",
+      fullRole: "Chief Technology Officer",
       avatar: "SM",
       photo: saharshPhoto,
       description:
@@ -28,15 +33,18 @@ const HomePage = () => {
     {
       id: "ashvith",
       name: "Ashvith Gurram",
-      role: "COO",
+      role: "COO 📝",
+      fullRole: "Chief Operating Officer",
       avatar: "AG",
+      photo: ashuPhoto,
       description:
         "As the Chief Operating Officer, Ashvith manages the day-to-day operations and implementation of Thermoroad's projects. Ashvith coordinates with city governments and ensures smooth deployment of our road substrate systems in urban areas.",
     },
     {
       id: "tanish",
       name: "Tanish Dasari",
-      role: "CFO",
+      role: "CFO 💰",
+      fullRole: "Chief Financial Officer",
       avatar: "TD",
       photo: tanishPhoto,
       description:
@@ -82,7 +90,6 @@ const HomePage = () => {
             <li>
               <a href="#team">Team</a>
             </li>
-
             <li>
               <a href="#contact">Contact</a>
             </li>
@@ -235,9 +242,8 @@ const HomePage = () => {
                 <div className="layer-content">
                   <h3>Copper Tube Supports</h3>
                   <p>
-                    6-inch tall vertical supports built out of copper tubes
-                    provide stability to the road and protect valuable
-                    components while enhancing heat conductivity.
+                    Tall vertical supports made of copper provide stability for
+                    our innovation while inducing heat transfer.
                   </p>
                 </div>
               </div>
@@ -246,7 +252,7 @@ const HomePage = () => {
                 <div className="layer-content">
                   <h3>Gravel Layer</h3>
                   <p>
-                    A 2-inch layer of aggregate (crushed rocks) with extremely
+                    A 4-inch layer of aggregate (crushed rocks) with extremely
                     high heat conductivity fills the bottom. This insulator
                     slows down heat transfer, making it safe for the environment
                     as rapid flow negatively affects it.
@@ -272,7 +278,7 @@ const HomePage = () => {
                     A grid of TEG modules placed directly under the asphalt.
                     Since the asphalt above is much hotter than the layers
                     below, the Seebeck effect occurs, converting heat energy to
-                    electricity that can be stored and used.
+                    electricity that can be stored and used. 5
                   </p>
                 </div>
               </div>
@@ -284,6 +290,18 @@ const HomePage = () => {
                     The final layer, the actual asphalt road, sits on top,
                     maximizing the temperature difference and power generated
                     while staying cooler and more durable.
+                  </p>
+                </div>
+              </div>
+
+              <div className="layer-item">
+                <div className="layer-number">5</div>
+                <div className="layer-content">
+                  <h3>Reducing Stress</h3>
+                  <p>
+                    Roads experience high stress throughout the day, especially
+                    city roads. To ensure this system doesn’t break, we will be
+                    adding elastomeric layers that are meant to spread load.
                   </p>
                 </div>
               </div>
@@ -312,7 +330,11 @@ const HomePage = () => {
                       >
                         <div className="member-avatar-large">
                           {member.photo ? (
-                            <img src={member.photo} alt={member.name} className="member-photo-large" />
+                            <img
+                              src={member.photo}
+                              alt={member.name}
+                              className="member-photo-large"
+                            />
                           ) : (
                             member.avatar
                           )}
@@ -328,16 +350,7 @@ const HomePage = () => {
                           ×
                         </button>
                         <h3>{member.name}</h3>
-                        <p className="member-role-detail">
-                          {member.role} -
-                          {member.role === "CMO"
-                            ? "Chief Marketing Officer"
-                            : member.role === "CTO"
-                            ? "Chief Technology Officer"
-                            : member.role === "COO"
-                            ? "Chief Operating Officer"
-                            : "Chief Financial Officer"}
-                        </p>
+                        <p className="member-role-detail">{member.fullRole}</p>
                         <p className="member-description-text">
                           {member.description}
                         </p>
@@ -355,7 +368,11 @@ const HomePage = () => {
                   >
                     <div className="member-avatar">
                       {member.photo ? (
-                        <img src={member.photo} alt={member.name} className="member-photo" />
+                        <img
+                          src={member.photo}
+                          alt={member.name}
+                          className="member-photo"
+                        />
                       ) : (
                         member.avatar
                       )}
@@ -479,7 +496,7 @@ const HomePage = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Thermoroad. All rights reserved.</p>
+          <p>&copy; 2026 Thermoroad. All rights reserved.</p>
           <p>Building sustainable roads for a better future.</p>
         </div>
       </footer>
